@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>计算机网络实验</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!--Main Navigation-->
+  <header>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-md navbar-dark indigo">
+      <div class="container">
+        <!-- Navbar brand -->
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+          aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+          <!-- Links -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">验证性
+                
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Guns.html">Wireshark
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="map.html">CPT</a>
+              <span class="sr-only">(current)</span>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="summary.html">总结</a>
+            </li>
+          </ul>
+          <!-- Links -->
+          <form class="form-inline">
+            <div class="md-form my-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            </div>
+          </form>
+        </div>
+        <!-- Collapsible content -->
+      </div>
+    </nav>
+    <!--/.Navbar-->
+  </header>
+  <!--Main Navigation-->
+
+  <main class="mt-5">
+    <!--Main container-->
+    <div class="container">
+      <!--Grid row 1-->
+      <div class="row">
+        <!--Grid column 1-->
+        <div class="col-md-7 mb-4">
+          <div class="view overlay z-depth-1-half">
+            <img src="http://r.photo.store.qq.com/psc?/V12FmhZY4119Bn/45NBuzDIW489QBoVep5mcVktkRWVDgRnzihBQiXMwnd19.sDu0SNAWnGhqV4FFFnNOIlCqxXxXAuDQzozp9JvKRA8Z25USjLmMJtyTuoj64!/r" class="card-img-top" alt="">
+            <div class="mask rgba-white-light"></div>
+          </div>
+        </div>
+        <!--Grid column-->
+        <!--Grid column 2-->
+        <div class="col-md-5 mb-4">
+          <h2>Cisco Packet Tracer 实验</h2>
+          <hr>
+          <p>本部分实验共有 15 个，需使用 Cisco Packet Tracer 软件完成。
+            请大家先了解 VLSM、CIDR、RIP、OSPF、VLAN、STP、NAT 及 DHCP 等概念，以能够进行网络规划和配置。</p>
+          <a href="summary.html" class="btn btn-indigo" >开始！</a>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+      <!--Grid row 2-->
+      <div class="row">
+
+        <!--Grid column 2-->
+        <div class="col-md-5 mb-4">
+          <h2>直接连接两台 PC </h2>
+          <h2>构建 LAN</h2>
+          <hr>
+          <p>将两台 PC 直接连接构成一个网络。注意：直接连接需使用交叉线。</p>
+          <p>进行两台 PC 的基本网络配置，只需要配置 IP 地址即可，然后相互 ping 通即成功。</p>
+        </div>
+        <!--Grid column-->
+        
+        <div class="card">
+          <!--Card image-->
+          <div class="view overlay">
+            <img src="http://r.photo.store.qq.com/psc?/V12FmhZY4119Bn/45NBuzDIW489QBoVep5mcXkXo2n8pH8DnKHPI1kJJTsA24.DvVpPshUI6iz.*uI*nZ8sf9N1XBxzU7WwB7F.O3Qntx6Wa*WtJEGi7Mob3Ms!/r" class="card-img-top"
+              alt="">
+            <a href="#">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+
+          <!--Card content-->
+          <div class="card-body">
+            <!--Title-->
+            <p class="card-text"></p>
+          </div>
+        </div>
+        
+
+        <!--Grid column 2-->
+        <div class="col-md-5 mb-4">
+          <hr>
+          <p>用交换机构建 LAN</p>
+          <p>机器名    IP     子网掩码 </p>
+          <p>PC0       192.168.1.1 255.255.255.0</p>
+          <p>PC1       192.168.1.2 255.255.255.0</p>
+          <p>PC2 192.168.2.1 255.255.255.0</p>
+          <p>PC3 192.168.2.2 255.255.255.0</p>
+          </p>
+        </div>
+        <!--Grid column-->
+        
+        <div class="card">
+          <!--Card image-->
+          <hr>
+          <p>PC0 ping PC1、PC2、PC3结果如下图所示。</p>
+          <hr>
+          <div class="view overlay">
+            <img src="http://r.photo.store.qq.com/psc?/V12FmhZY4119Bn/45NBuzDIW489QBoVep5mceG4UyAoIYwHYCBEmzrK3y7Tpt7c2ozD72s0nZUZ3HcCCQwuJ6JW2ufu21U3FBwbJGLj2Cosc1pYuhl2ZoizxdM!/r" class="card-img-top"
+              alt="">
+              <hr>
+              <img src="http://r.photo.store.qq.com/psc?/V12FmhZY4119Bn/45NBuzDIW489QBoVep5mceG4UyAoIYwHYCBEmzrK3y73*z2feCMntA7c.83LHDwAnqSEP4H8sqjNzllo8KI46Xb8pnmniinRqGCr5sJkxAI!/r" class="card-img-top"
+              alt="">
+              <hr>
+              <img src="http://r.photo.store.qq.com/psc?/V12FmhZY4119Bn/45NBuzDIW489QBoVep5mceG4UyAoIYwHYCBEmzrK3y5mibB5viHKJmjKyAtCBbuW1iNdcMQglL0jYJSv3yYa5ZKHBRccWzpMkT.f7Rkd5CI!/r" class="card-img-top"
+              alt="">
+              <hr>
+            <a href="#">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+            <p>PC3 ping PC0、PC1、PC2结果如下图所示。</p>
+            <hr>
+            <img src="http://r.photo.store.qq.com/psc?/V12FmhZY4119Bn/45NBuzDIW489QBoVep5mcXInkGc5SxOcZLwTRxw6GndUbJvpN6nNtxcbj2Pl0DAvVORgYeOm05JMtzQNP7IunsGlKvZS8Y3*rgetQ9JGN00!/r" class="card-img-top"
+            alt="">
+            <hr>
+            <img src="http://r.photo.store.qq.com/psc?/V12FmhZY4119Bn/45NBuzDIW489QBoVep5mcXInkGc5SxOcZLwTRxw6Gne9xXOtwncZ4WEtloORNVHEz9H8wL2DMrn8Z2KcpzFUiG4PI6vKQyBg0zS79x5kwaM!/r" class="card-img-top"
+            alt="">
+            <hr>
+            <img src="http://r.photo.store.qq.com/psc?/V12FmhZY4119Bn/45NBuzDIW489QBoVep5mcXInkGc5SxOcZLwTRxw6Gne7lArv*1OPD62EI.4k8aR77mljMTnoFM.sZci508HDT9IfLn7tN3BjJYU4Mz7hJwc!/r" class="card-img-top"
+            alt="">
+            <hr>
+            <p>将4台PC的子网掩码都改为255.255.0.0，再去相互ping，结果如下图所示。</p>
+            <p>PC0可以ping通PC2，PC3也可以ping通PC1。</p>
+            <img src="http://r.photo.store.qq.com/psc?/V12FmhZY4119Bn/45NBuzDIW489QBoVep5mcb5Z6JBWmo4zF29WHO5wwgZeTSephG1*PERhxpSQpx7dAoNita81PGg.f207BpaiH2PVxslBhMYfAPD.iKwKqLI!/r" class="card-img-top"
+            alt="">
+            <hr>
+            <img src="http://r.photo.store.qq.com/psc?/V12FmhZY4119Bn/45NBuzDIW489QBoVep5mcb5Z6JBWmo4zF29WHO5wwgZmaiSvVSPpi.cyRFfaxR5gjY640liq5szhe6Df1b52633aQUumsfvbQ.4BTsG98A0!/r" class="card-img-top"
+            alt="">
+
+          </div>
+          <!--Card content-->
+          <div class="card-body">
+            <!--Title-->
+            <p>PC0能否ping通PC1、PC2、PC3？</p>
+            <p>----PC0可以ping通PC1，但无法ping通PC2、PC3。因为PC0和PC1在同一子网下，PC2和PC3在另一个子网下。同一子网下主机可以相互ping通，但两不同子网的主机无法ping通。</p>
+            <p>PC3能否ping通PC0、PC1、PC2？为什么？</p>
+            <p>----PC3可以ping通PC2，但无法ping通PC0、PC1。理由同上。</p>
+            <p>将4台PC的掩码都改为255.255.0.0，它们相互能ping通吗？为什么？</p>
+            <p>----修改后，它们可以相互ping通。因为子网掩码改为255.255.0.0后，4台主机都属于192.168.0.0/16这一子网，同一子网下任意两台主机都可以ping通。</p>
+            <p>使用二层交换机连接的网络需要配置网关吗？为什么？</p>
+            <p>----需要。如果要对二层交换机做telnet、ssh等管理就必须要设置网关。这样跨网段访问该二层交换机的时候，交换机才会知道如何转发数据包（在二层交换机中，配置网关尤为重要，因为其与相连的自治系统可以向核心系统通告可达信息）。</p>
+          </div>
+        </div>
+        
+
+        <!--Grid column 2-->
+        <div class="col-md-5 mb-4">
+          <p>交换机接口地址列表</p>
+          <p>二层交换机是一种即插即用的多接口设备，它对于收到的帧有 3 种处理方式：广播、转发和丢弃（请弄清楚何时进行何种操作）。那么，要转发成功，则交换机中必须要有接口地址列表即 MAC 表，该表是交换机通过学习自动得到的！</p>
+          <p> 仍然构建上图的拓扑结构，并配置各计算机的 IP 在同一个一个子网，使用工具栏中的放大镜点击某交换机如左边的 Switch3，选择 MAC Table，可以看到最初交换机的 MAC 表是空的，也即它不知道该怎样转发帧（那么它将如何处理？），用 PC0 访问（ping）PC1 后，再查看该交换机的 MAC 表，现在有相应的记录，请思考如何得来。随着网络通信的增加，各交换机都将生成自己完整的 MAC 表，此时交换机的交换速度就是最快的！</p>
+        </div>
+        <!--Grid column-->
+        <!--图片-->
+        <div class="card">
+        <!--Card image-->
+        <div class="view overlay">
+          <hr>
+          <p>最初交换机的MAC表如图所示。</p>
+          <hr>
+        <img src="https://img-blog.csdnimg.cn/ac4bd90ed54d413a9b6cd5889ab6adb4.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_20,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+          alt=""><hr>
+        <p>PC0去ping PC1：</p><hr>
+        <img src="https://img-blog.csdnimg.cn/1c120330273a4e14bee8da000216d3b9.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_18,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+          alt=""><hr>
+        <p>再查看MAC表，出现相应记录。最初交换机的MAC表如图所示。</p><hr>
+        <img src="https://img-blog.csdnimg.cn/8a91db2f6e2344019e728f0c550d8659.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_15,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+          alt=""> 
+        <div class="mask rgba-white-slight"></div>
+        </a>
+        </div>
+        <!--Card content-->
+        <div class="card-body">
+        <!--Title--><hr>
+        <p>由于MAC Table刚搭建好时还没有通信，所以初始表是空的，在有ping命令后，它将进行ARP广播，收到某端口的应答之后即可知道该帧的目的MAC，并将其存入表中。所以在PC0 ping通 PC1后，交换机的MAC表就会有与之相应的记录。</p>
+          <hr>
+          <a href="#">
+        </div>
+        </div>
+        <!--图片-->
+
+        <!--Grid column 2-->
+        <div class="col-md-5 mb-4" >
+          <p>生成树协议（Spanning Tree Protocol）</p>
+          <p>交换机在目的地址未知或接收到广播帧时是要进行广播的。如果交换机之间存在回路/环路，那么就会产生广播循环风暴，从而严重影响网络性能。</p>
+          <p>而交换机中运行的 STP 协议能避免交换机之间发生广播循环风暴。</p>
+          <p>只使用交换机，构建如下拓扑：</p>
+        </div>
+        <!--Grid column-->
+        <!--图片-->
+        <div class="card">
+          <!--Card image-->
+          <div class="view overlay">
+            <hr>
+          <img src="https://img-blog.csdnimg.cn/a7d4d24b459740b6ac12c05794874655.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_16,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+            alt=""><hr>
+          <p>这是初始时的状态。我们可以看到交换机之间有回路，这会造成广播帧循环传送即形成广播风暴，严重影响网络性能。</p>
+          <p>随后，交换机将自动通过生成树协议（STP）对多余的线路进行自动阻塞（Blocking），以形成一棵以 Switch4 为根（具体哪个是根交换机有相关的策略）的具有唯一路径树即生成树！</p>
+          <p>经过一段时间，随着 STP 协议成功构建了生成树后，Switch5 的两个接口当前物理上是连接的，但逻辑上是不通的，处于Blocking状态（桔色）如下图所示：</p><hr>
+          <img src="https://img-blog.csdnimg.cn/ac7586e01d7142018860818f20965273.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_15,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+            alt=""><hr>
+          <p>在网络运行期间，假设某个时候 Switch4 与 Switch5 之间的物理连接出现问题（将 Switch4 与 Switch5 的连线剪掉），则该生成树将自动发生变化。Switch5 上方先前 Blocking 的那个接口现在活动了（绿色），但下方那个接口仍处于 Blocking 状态（桔色）。如下图所示：</p><hr>
+          <img src="https://img-blog.csdnimg.cn/2784147645e8436d836fcdb316d1577f.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_15,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+            alt=""> 
+          <div class="mask rgba-white-slight"></div>
+          </a>
+          </div>
+          <!--Card content-->
+          <div class="card-body">
+          <!--Title--><hr>
+            <hr>
+            <a href="#"></a>
+          </div>
+          </div>
+          <!--图片-->
+
+                  <!--Grid column 2-->
+        <div class="col-md-5 mb-4">
+          <hr>
+          <p>路由器配置初步</p>
+          <p>  我们模拟重庆交通大学和重庆大学两个学校的连接，构建如下拓扑：</p>
+        </div></div>
+        <!--Grid column-->
+
+        <div class="card">
+          <!--Card image-->
+          <div class="view overlay">
+            <img src="https://img-blog.csdnimg.cn/20201222105115160.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2tsa2xrbGJi,size_16,color_FFFFFF,t_70" class="card-img-top"
+              alt=""><img src="https://img-blog.csdnimg.cn/20201220165410646.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2tsa2xrbGJi,size_16,color_FFFFFF,t_70" class="card-img-top"
+              alt="">
+            <a href="#">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Card content-->
+          <div class="card-body">
+            <!--Title-->
+          </div>
+        </div>
+        
+        <!--Grid column 2-->
+        <div class="col-md-5 mb-4">
+          <hr>
+          <p>说明一</p>
+          <p>交通大学与重庆大学显然是两个不同的子网。在不同子网间通信需通过路由器。</p>
+            
+          <p>路由器的每个接口下至少是一个子网，图中我们简单的规划了 3 个子网：</p>
+            
+          <p>1.左边路由器是交通大学的，其下使用交换机连接交通大学的网络，分配网络号 192.168.1.0/24，该路由器接口也是交通大学网络的网关，分配 IP 为 192.168.1.1</p>
+          <p>2.右边路由器是重庆大学的，其下使用交换机连接重庆大学的网络，分配网络号 192.168.3.0/24，该路由器接口也是重庆大学网络的网关，分配 IP 为 192.168.3.1</p>
+          <p>3.两个路由器之间使用广域网接口相连，也是一个子网，分配网络号 192.168.2.0/24</p>
+          <p>说明二</p>
+          <p>现实中，交通大学和重庆大学的连接是远程的。该连接要么通过路由器的光纤接口，要么通过广域网接口即所谓的 serial 口（如拓扑图所示）进行，一般不会通过双绞线连接（为什么？）。</p>
+            
+          <p>下面我们以通过路由器的广域网口连接为例来进行相关配置。请注意：我们选用的路由器默认没有广域网模块（名称为 WIC-1T 等），需要关闭路由器后添加，然后再开机启动。</p>
+            
+          <p> 说明三</p>
+          <p>在模拟的广域网连接中需注意 DCE 和 DTE 端（连线时线路上有提示，带一个时钟标志的是 DCE 端。有关 DCE 和 DTE 的概念请查阅相关资料。），在 DCE 端需配置时钟频率 64000</p>
+            
+          <p>说明四</p>
+          <p>路由器有多种命令行配置模式，每种模式对应不同的提示符及相应的权限。</p>
+            
+          <p>请留意在正确的模式下输入配置相关的命令。</p>
+            
+          <p>-User mode：用户模式</p>
+          <p>-Privileged mode：特权模式</p>
+          <p>-Global configuration mode：全局配置模式</p>
+          <p>-Interface mode：接口配置模式</p>
+          <p>-Subinterface mode：子接口配置模式</p>
+          <p>说明五</p>
+          <p>在现实中，对新的路由器，显然不能远程进行配置，我们必须在现场通过笔记本的串口与路由器的 console 接口连接并进行初次的配置（注意设置比特率为9600）后，才能通过网络远程进行配置。这也是上图左上画出笔记本连接的用意。</p>
+            
+          <p>说明六</p>
+          <p>在路由器的 CLI 界面中，可看到路由器刚启动成功后，因为无任何配置，将会提示是否进行对话配置（Would you like to enter the initial configuration dialog?），因其步骤繁多，请选择 NO</p>
+          <hr>
+          <p>比如交通大学路由器的初步配置可以如下：</p>
+            <p>Router>en   // 从普通模式进入特权模式</p>
+            <p>Router#conf t   // 进入全局配置模式</p>
+            <p>Router(config)#interface FastEthernet0/0</p>
+            <p>Router(config-if)#ip address 192.168.1.1 255.255.255.0</p>
+            <p>Router(config-if)#no shutdown</p>
+            <p>Router(config-if)#exit</p>
+            <p>Router(config)#line vty 0 4 //可支持0-4共5个终端同时登录</p>
+            <p>Router(config-line)#password dswybs // 远程登录密码</p>
+            <p>Router(config-line)#login</p>
+            <p>Router(config-line)#exit</p>
+            <p>Router(config)#enable password dswybs // 特权模式密码</p>
+            <p>Router(config)#^Z  // 退出</p>
+            <hr>
+            <p>交通大学路由器基本配置如下：</p>
+            <p>以太网口：</p>
+            <p>Router>enable   // 从普通模式进入特权模式</p>
+            <p>Router#configure terminal   // 进入全局配置模式</p>
+            <p>Router(config)#interface f0/0   // 进入配置以太网口模式</p>
+            <p>Router(config-if)#ip address 192.168.1.1 255.255.255.0   // 配置该接口的 IP</p>
+            <p>Router(config-if)#no shutdown   // 激活接口</p>
+            <p>Router(config-if)#^z   // 直接退到特权模式</p>
+            <p>Router#</p>
+            <hr>
+            <p>广域网口：</p>
+            <p>Router>en   // 从普通模式进入特权模式</p>
+            <p>Router#conf t   // 进入全局配置模式</p>
+            <p>Router(config)#int s0/0   // 进入配置广域网口模式</p>
+            <p>Router(config-if)#ip address 192.168.2.1 255.255.255.0   //配置该接口的 IP</p>
+            <p>Router(config-if)#clock rate 64000    // 其为 DCE 端，配置时钟频率</p>
+            <p>Router(config-if)#no shutdown   // 激活接口</p>
+            <p>Router(config-if)#^z   // 直接退到特权模式</p>
+            <p>Router#</p>
+            <hr>
+            <p>重庆大学路由器基本配置如下：</p>
+            <p>以太网口：</p>
+            <p>Router>en   // 从普通模式进入特权模式</p>
+            <p>Router#conf t   // 进入全局配置模式</p>
+            <p>Router(config)#int f0/0   // 进入配置以太网口模式</p>
+            <p>Router(config-if)#ip address 192.168.3.1 255.255.255.0   // 配置该接口的 </p>
+            <p>Router(config-if)#no shutdown   // 激活接口</p>
+            <p>Router(config-if)#^z   // 直接退到特权模式</p>
+            <p>Router#</p>
+            <hr>
+            <p>广域网口：</p>
+            <p>Router>en   // 从普通模式进入特权模式</p>
+            <p>Router#conf t   // 进入全局配置模式</p>
+            <p>Router(config)#int s0/0   // 进入配置广域网口模式</p>
+            <p>Router(config-if)#ip address 192.168.2.2 255.255.255.0   //配置该接口的 IP</p>
+            <p>Router(config-if)#no shutdown   // 激活接口</p>
+            <p>Router(config-if)#^z   // 直接退到特权模式</p>
+            <p>Router#</p>
+            <hr>
+        </div>
+
+        <!--图片-->
+        <div class="card">
+          <!--Card image-->
+          <div class="view overlay">
+            <hr>
+            <p>现在交通大学内的各 PC 及网关相互能 ping 通，重庆大学也类似。但不能从交大的 PC ping 通重大的 PC，反之亦然，也即不能跨子网。为什么？</p>
+            <hr>
+          <img src="https://img-blog.csdnimg.cn/20201222110252370.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2tsa2xrbGJi,size_16,color_FFFFFF,t_70" class="card-img-top"
+            alt=""><hr>
+          <img src="https://img-blog.csdnimg.cn/20201222110320842.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2tsa2xrbGJi,size_16,color_FFFFFF,t_70" class="card-img-top"
+            alt=""><hr>
+          <p>可以看出，在同一个子网下可以ping通，没在同一个子网下的不可以ping通，因为在路由表中没有能够到达对方的路由路径，所以就无法ping通。</p><hr>
+          <div class="mask rgba-white-slight"></div>
+          </a>
+          </div>
+          <!--Card content-->
+          <div class="card-body">
+          <!--Title-->
+            <a href="#">
+          </div>
+          </div>
+          <!--图片-->
+
+        
+        <!--Grid column-->
+        <div class="card">
+          <!--Card image-->
+          <div class="view overlay">
+            
+            <a href="#">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Card content-->
+          <div class="card-body">
+            <!--Title-->
+            <p>静态路由</p>
+            <p>静态路由是非自适应性路由协议，是由网络管理人员手动配置的，不能够根据网络拓扑的变化而改变。 因此，静态路由简单高效，适用于结构非常简单的网络。</p>
+
+            <p>在当前这个简单的拓扑结构中我们可以使用静态路由，即直接告诉路由器到某网络该怎么走即可。</p>
+
+            <p>在前述路由器基本配置成功的情况下使用以下命令进行静态路由协议的配置：</p>
+            <hr>
+            <p>交通大学路由器静态路由配置：</p>
+            <p>Router>en   // 从普通模式进入特权模式</p>
+            <p>Router#conf t   // 进入全局配置模式</p>
+            <p>Router(config)#ip route 192.168.3.0 255.255.255.0 192.168.2.2   // 告诉交通大学路由器到 192.168.3.0 这个网络的下一跳是 192.168.2.2</p>
+            <p>Router(config)#exit   //退到特权模式</p>
+            <p>Router#show ip route    //查看路由表</p>
+            <hr>
+            <p>重庆大学路由器静态路由配置：</p>
+            <p>Router>en   // 从普通模式进入特权模式</p>
+            <p>Router#conf t   // 进入全局配置模式</p>
+            <p>Router(config)#ip route 192.168.1.0 255.255.255.0 192.168.2.1   // 告诉重庆大学路由器到 192.168.1.0 这个网络的下一跳是 192.168.2.1</p>
+            <p>Router(config)#exit   //退到特权模式</p>
+            <p>Router#show ip route    //查看路由表</p>
+            <p>查看路由表你可看到标记为 S 的一条路由，S 表示 Static 。</p>
+            <p>至此，这些 PC 能全部相互 ping 通！</p>
+            <hr>
+          </div>
+        </div>
+        <!--Grid column 2-->
+        <div class="col-md-5 mb-4">
+          <p>动态路由 OSPF</p>
+          <p> OSPF（Open Shortest Path First 开放式最短路径优先）是一个内部网关协议（Interior Gateway Protocol，简称 IGP）， 用于在单一自治系统（Autonomous System，AS）内决策路由。OSPF 性能优于 RIP，是当前域内路由广泛使用的路由协议。</p>
+            
+          <p>同样的，我们需要把刚才配置的 RIP 路由先清除掉。</p>
+          <hr>
+            
+          <p>清除 RIP 路由配置：</p>
+          <p>直接关闭路由器电源。相当于没有保存任何配置，然后各接口再按照前面基本配置所述重新配置 IP 等参数</p>
+          <p>使用 no 命令清除 RIP 路由。在全局配置模式下，各路由器都使用：no router rip 命令进行清除</p>
+          <hr>
+          <p>交通大学路由器 OSPF 路由配置：</p>
+          <p>Router>en   // 从普通模式进入特权模式</p>
+          <p>Router#conf t   // 进入全局配置模式</p>
+          <p>Router(config)#router ospf 1   // 启用 OSPF 路由协议，进程号为1（可暂不理会进程号概念）</p>
+          <p>Router(config-router)#network 192.168.1.0 0.0.0.255 area 0   // 自治域0中的属于 192.168.1.0/24 网络的所有主机（反向掩码）参与 OSPF</p>
+          <p>Router(config-router)#network 192.168.2.0 0.0.0.255 area 0   // 自治域0中的属于 192.168.2.0/24 网络的所有主机（反向掩码）参与 OSPF</p>
+          <p>Router(config-router)#^z   //直接退到特权模式</p>
+          <p>Router#show ip route    //查看路由表</p>
+          <hr>
+          <p>重庆大学路由器 OSPF 路由配置：</p>
+          <p>Router>en   // 从普通模式进入特权模式</p>
+          <p>Router#conf t   // 进入全局配置模式</p>
+          <p>Router(config)#router ospf 1   // 启用 OSPF 路由协议，进程号为1</p>
+          <p>Router(config-router)#network 192.168.3.0 0.0.0.255 area 0   // 自治域0中的属于 192.168.3.0/24 网络的所有主机（反向掩码）参与 OSPF</p>
+          <p>Router(config-router)#network 192.168.2.0 0.0.0.255 area 0   // 自治域0中的属于 192.168.2.0/24 网络的所有主机（反向掩码）参与 OSPF</p>
+            <p>Router(config-router)#^z   //直接退到特权模式</p>
+            <p>Router#show ip route    //查看路由表</p>
+            <p>       查看路由表你可看到标记为 O 的一条路由，O 表示 OSPF 。</p>
+            <hr>
+            
+            <p>    至此，这些 PC 能全部相互 ping 通！</p>
+        </div>
+        <!--Grid column-->
+        <div class="card">
+          <!--Card image-->
+          <div class="view overlay">
+            <img src="https://img-blog.csdnimg.cn/2020122211202413.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2tsa2xrbGJi,size_16,color_FFFFFF,t_70" class="card-img-top"
+              alt="">
+            <a href="#">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Card content-->
+          <div class="card-body">
+            <!--Title-->
+            <hr>
+          </div>
+        </div>
+         <!--Grid column 2-->
+
+                 <!--Grid column 2-->
+        <div class="col-md-5 mb-4">
+          <p>基于端口的网络地址翻译 PAT</p>
+          <p>网络地址转换（NAT，Network Address Translation）被各个 Internet 服务商即 ISP 广泛应用于它们的网络中，也包括 WiFi 网络。 原因很简单，NAT 不仅完美地解决了 lP 地址不足的问题，而且还能够有效地避免来自网络外部的攻击，隐藏并保护网络内部的计算机。
+            <hr>
+            <p>NAT 的实现方式一般有三种：</p>
+          
+            <p>静态转换： Static NAT</p>
+            <p>动态转换： Dynamic NAT</p>
+            <p>端口多路复用： OverLoad</p>
+            <hr>
+            <p>端口多路复用使用最多也最灵活。OverLoad 是指不仅改变发向 Internet 数据包的源 IP 地址，同时还改变其源端口，即进行了端口地址转换（PAT，Port Address Translation）。</p>
+          
+            <p>采用端口多路复用方式，内部网络的所有主机均可共享一个合法外部 IP 地址实现对 Internet 的访问，从而可以最大限度地节约IP地址资源。 同时，又可隐藏网络内部的所有主机，有效避免来自 Internet 的攻击。因此，目前网络中应用最多的就是端口多路复用方式。</p>
+          
+            <p>我们仍然使用重庆交通大学和重庆大学两个学校的拓扑进行 PAT 实验。我们需要保证两个学校的路由已经配置成功，无论使用静态路由还是动态路由，以下我们给出完整的配置过程：设定这两个学校的路由器使用 OSPF 协议，模拟交通大学使用内部 IP 地址（192.168.1.0/24），模拟重庆大学使用外部 IP 地址（8.8.8.0/24），两个路由器之间使用外部 IP 地址（202.202.240.0/24），在交通大学的出口位置即广域网口实施 PAT。</p>
+            <hr>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="card">
+          <!--Card image-->
+          <div class="view overlay">
+            <hr>
+            <p>改变原先拓扑中两个路由器的网络配置</p><hr>
+            <img src="https://img-blog.csdnimg.cn/25b763bf63d544c39d5f8f9469cdf741.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_20,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+              alt="">
+              <hr>
+              <img src="https://img-blog.csdnimg.cn/19c543202cb14b51b0d8fe65c81e403b.png" class="card-img-top"
+              alt=""><hr>
+              <img src="https://img-blog.csdnimg.cn/c582ece78740400faa93ff59ba7a01c2.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_20,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+              alt=""><hr>
+              <img src="https://img-blog.csdnimg.cn/cf81e4599a8347bdad0f127728187c6b.png" class="card-img-top"
+              alt="">
+            <hr>
+            <p>拓扑图中各 PC 配置数据</p><hr>
+            <img src="https://img-blog.csdnimg.cn/20201222113149273.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2tsa2xrbGJi,size_16,color_FFFFFF,t_70" class="card-img-top"
+              alt="">
+              <hr>
+              <p>拓扑图中路由器各接口配置数据</p>
+              <hr>
+              <img src="https://img-blog.csdnimg.cn/20201222113158108.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2tsa2xrbGJi,size_16,color_FFFFFF,t_70" class="card-img-top"
+                alt="">
+                <p>配置OSPF路由，</p>
+            <hr>
+            <img src="https://img-blog.csdnimg.cn/28c72cbe930f418db07cf0f4c4294d09.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_20,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+              alt="">
+              <hr>
+              <img src="https://img-blog.csdnimg.cn/bf127d3ef18a4ca09333f5797c6925d9.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_20,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+                alt=""><hr>
+                <p>此时，这些PC可以全部相互ping通。比如，用PC0 ping PC2可以成功</p>
+            <hr>
+            <img src="https://img-blog.csdnimg.cn/29640dc44175414aae5927e632aa4bea.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_20,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+              alt=""><hr>
+              <p>重庆大学路由器丢包配置</p>
+            <hr>
+            <img src="https://img-blog.csdnimg.cn/fccfbed5771c4330bbefdd8ade44c69d.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_20,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+              alt=""><hr>
+              <p>此时，再用PC0 ping PC2就不成功，显示目的主机不可到达信息</p>
+              <hr>
+              <img src="https://img-blog.csdnimg.cn/4da3ba495aab4e5eb88d56e82111845d.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_18,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+                alt="">
+                <hr>
+              <p>最后在交通大学路由器的广域网口实施PAT</p>
+              <hr>
+              <img src="https://img-blog.csdnimg.cn/f419b1e669374f6f9ff198be7dec7a24.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_20,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+                alt="">
+                <hr>
+              <p>我们在交通大学路由器的出口上将内部/私有IP地址转换为外部/公开IP，从而包的源IP发生了改变，就不会被重庆大学路由器丢弃，因此网络连通。</p>
+
+              <p>现在，再用PC0 ping PC2则会成功</p>
+              <hr>
+              <img src="https://img-blog.csdnimg.cn/fca53a6d762147da8c1a450a63af8027.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_18,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+                alt="">
+            <a href="#">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Card content-->
+          <div class="card-body">
+            <!--Title-->
+          </div>
+        </div>
+         <!--Grid column 2-->
+        <div class="col-md-5 mb-4">
+          <hr>
+          <p>在实际网络中，我们可以看到路由器一般位于网络的边界，而内部几乎全部使用交换机连接。</p>
+          <p>前面我们分析过，交换机连接的是同一个子网。 显然，在这样一个大型规模的子网中进行广播甚至产生广播风暴将严重影响网络性能甚至瘫痪。</p>
+          <p>另外我们也已经知道，其实学校是划分了 N 多个子网的，那么这些交换机连接的就绝不是一个子网。这样矛盾的事情该如何解释呢？我们实际上使用了支持 VLAN 的交换机，而前述的交换机只是普通的 2 层交换机（或者我们把它当作 2 层交换机在使用。</p>
+          <hr>
+          <p>VLAN（Virtual Local Area Network）即虚拟局域网。通过划分 VLAN，我们可以把一个物理网络划分为多个逻辑网段即多个子网。</p>
+          <hr>
+          <p>划分 VLAN 后可以杜绝网络广播风暴，增强网络的安全性，便于进行统一管理等。</p>
+          <p>按照要求构建拓扑，如图所示。</p>
+        </div>
+        <!--Grid column-->
+        <div class="card">
+          <!--Card image-->
+          <div class="view overlay">
+            <img src="https://img-blog.csdnimg.cn/71da738898c64d15b0e4337468a45108.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_20,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+              alt="">
+              <hr>
+              <img src="https://img-blog.csdnimg.cn/08f29f1877ad44f6814fa91c9a8e9711.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_20,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+              alt="">
+              <hr>
+              <p>按照要求构建拓扑</p>
+              <hr>
+              <img src="https://img-blog.csdnimg.cn/38f7b2338efc4f09953736d3534a0c62.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_20,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+              alt="">
+              <hr>
+              <img src="https://img-blog.csdnimg.cn/28db43013c3a449aad630ea4da3a784f.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_18,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+              alt="">
+              <hr>
+              <img src="https://img-blog.csdnimg.cn/ce3c2ae73d9a4ebea0c4d162b4a466b6.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_19,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+              alt="">
+              <hr>
+              <p>至此，在该交换机上我们划分了3个VLAN（不包括缺省的VLAN1）。</p>
+              <p> 此时用ping命令进行测试，发现只有在同一VLAN中的PC才能通信，且广播也局限于该VLAN。例如，用PC0 ping PC2，PC3 ping PC5，PC6 ping PC1都无法ping通</p>
+              <img src="https://img-blog.csdnimg.cn/7c52ba988b7746e4ae8c52929b77d823.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_18,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+              alt="">
+              <hr>
+              <img src="https://img-blog.csdnimg.cn/2138767a42e645c1ac9c1385b6a3fc0a.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_18,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+              alt="">
+              <hr>
+              <img src="https://img-blog.csdnimg.cn/38e4359befd741d9bed87fc2061ccffd.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_18,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+              alt="">
+              <hr>
+              
+            <a href="#">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Card content-->
+          <div class="card-body">
+            <!--Title-->
+            <p>分析一下当前为何不同 VLAN 中的 PC 不能通信？网关在此起什么作用？我们的网关又在何处？</p>
+              <p>如何发起广播测试？</p>
+            <hr>
+            <p>1.VLAN可以分割网络，因此不能通信；</p>
+            <p>2.VLAN只是数据链路层的协议，划分广播域，从而不需要考虑IP；</p>
+            <p>3.网关是进行协议转换的，通信一定需要通过网关；</p>
+            <p>4.若要发起广播测试，要引入三层设备。</p>
+            <hr>
+          </div>
+        </div>
+        <!--Grid column 2-->
+        <div class="col-md-5 mb-4">
+          <h2>虚拟局域网管理 VTP</h2>
+          <hr>
+            <p>前一个实验我们在交换机上进行了 VLAN 的规划和划分。但在实际应用中，我们绝不允许在这些支持VLAN的交换机上进行随意的 VLAN 划分，如此将造成管理混乱！VLAN的划分必须得到统一的规划和管理，这就需要 VTP 协议。</p>
+            <p>VTP（VLAN Trunk Protocol）即 VLAN 中继协议。VTP 通过 ISL 帧或 Cisco 私有 DTP 帧（可查阅相关资料了解）保持 VLAN 配置统一性，也被称为虚拟局域网干道协议，它是思科私有协议。 VTP 统一管理、增加、删除、调整VLAN，自动地将信息向网络中其它的交换机广播。</p>
+            <p>此外，VTP 减小了那些可能导致安全问题的配置，只要在 VTP Server 做相应设置，VTP Client 会自动学习 VTP Server 上的 VLAN 信息。</p>
+            <p>为演示 VTP，重新构建如下拓扑结构：</p>
+        </div>
+        <!--Grid column-->
+          <!--Grid column-->
+          <div class="card">
+            <!--Card image-->
+            <p class="view overlay">
+              <img src="https://img-blog.csdnimg.cn/3f59df1445154a4eb98f40ba0c9d1f84.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_20,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+                alt="">
+                <hr>
+                <p>3560 VTP Server配置</p>
+                <hr>
+                <img src="https://img-blog.csdnimg.cn/84bc895b7ce44ff59702907470382a27.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_20,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+                alt="">
+                
+                <hr>
+                <img src="https://img-blog.csdnimg.cn/29f61bdb6093498d887992456bddee30.png" class="card-img-top"
+                alt="">
+                <hr>
+                <p>2960A VTP Client配置</p>
+                <hr>
+                <img src="https://img-blog.csdnimg.cn/9be192e5e7b849c99a96086efbeb8883.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_20,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+                alt="">
+                <hr>
+                <p>2960B VTP Client配置</p>
+                <hr>
+                <img src="https://img-blog.csdnimg.cn/ddb6df74495142bbbeec585aefbbab6e.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_19,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+                alt="">
+                <hr>
+                <p>至此，VTP配置完成。同VLAN可以ping通，而不同VLAN则不行（即使在同一交换机下，如从PC0到PC1），且能够方便地统一规划和管理。ping结果</p>
+                <hr>
+                <img src="https://img-blog.csdnimg.cn/ddb6df74495142bbbeec585aefbbab6e.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_19,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+                alt="">
+                <hr>
+                <h2>VLAN 间的通信</h2>
+                <hr>
+                <p>VTP 只是给我们划分和管理 VLAN 提供了方便，由上面的测试得知，目前我们仍然不能在 VLAN 间通信。</p>
+  
+                <p>因为默认的，VLAN 间是不允许进行通信，此时我们需要所谓的独臂路由器在 VLAN 间为其进行转发！</p>
+  
+                <p>我们使用的核心交换机 3560 是个 3 层交换机，可工作在网络层，也称路由交换机，即具有路由功能，能进行这种转发操作。</p>
+                <img src="https://img-blog.csdnimg.cn/29bb603060cc493caa44ddb79e94156b.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_19,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+                  alt="">
+                <hr>
+                <p>3560 交换机配置：</p>
+                <p>3560>en</p>
+                <p>3560#conf t</p>
+                <p>3560(config)#int g0/1    // 配置连接左边 2960A 交换机的接口</p>
+                <p>3560(config-if)#switchport trunk encapsulation dot1q    // 封装 VLAN 协议</p>
+                <p>3560(config-if)#switchport mode trunk     // 设置为中继模式</p>
+                <p>3560(config-if)#switchport trunk allowed vlan all     // 在所有 VLAN 间转发</p>
+                <p>3560(config-if)#exit</p>
+                <p>3560(config)#int g0/2    // 配置连接右边 2960B 交换机的接口</p>
+                <p>3560(config-if)#switchport trunk encapsulation dot1q    //封装 VLAN 协议</p>
+                <p>3560(config-if)#switchport mode trunk     // 设置为中继模式</p>
+                <p>3560(config-if)#switchport trunk allowed vlan all     // 在所有 VLAN 间转发</p>
+                <p>3560(config-if)#exit</p>
+                <p>3560(config)#ip routing    // 启用路由转发功能</p>
+                <hr>
+                <p>至此，各 VLAN 中的 PC 可以正常通信。</p>
+                <hr>
+                <h2>DHCP、DNS及Web服务器简单配置</h2>
+                <hr>
+                <p>动态主机配置 DHCP、域名解析 DNS 以及 Web 服务在日常应用中作用巨大，我们构建如下简单的拓扑来进行练习。</p>
+                <img src="https://img-blog.csdnimg.cn/7a1cbb3c33d84412ae206fc3b99cdc7b.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_16,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+                  alt="">
+                  <img src="https://img-blog.csdnimg.cn/bad41f5870e84038b17aac225d3b4810.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_20,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+                  alt="">
+                  <hr>
+                  <p>DHCP配置：</p>
+                  <hr>
+                  <img src="https://img-blog.csdnimg.cn/548d08c21d754b159ea8661d3e05a47b.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_13,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+                  alt="">
+                  <p>DNS配置：</p>
+                  <img src="https://img-blog.csdnimg.cn/9f32fcd79d4e416f8965476ed9d7dd56.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_13,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+                  alt="">
+                  <hr>
+                  <p>1.先查看各 PC，看看是否获得网络配置</p>
+                  <p>2.因为我们在 DNS 服务器中把谷歌和百度的 IP 都设为了 19.89.6.4，即 Server-PT，所以，如果打开 PC0 的浏览器，输入 www.google.com 或者 www.baidu.com，我们都应该看到默认的 Server-PT 这个 Web 服务器的主页（你也可进行编辑）</p>
+                <hr>
+                <img src="https://img-blog.csdnimg.cn/f98b9da54d684420a7c0c15d0cd854b8.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_19,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+                  alt="">
+                  <hr>
+                  <img src="https://img-blog.csdnimg.cn/90a9fd6a03db4afb8e9dc52ec0001da4.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_18,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+                  alt="">
+                <hr>
+                <p>打开PC0浏览器输入www.google.com和www.baidu.com，看到都是默认的Server-PT的主页</p>
+                <hr>
+                <img src="https://img-blog.csdnimg.cn/1b1a39372dd84be699d2e7ea4981819c.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_20,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+                  alt="">
+                  <hr>
+                  <img src="https://img-blog.csdnimg.cn/fc54b0d113f74d7187357bc1bb020bcc.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_20,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+                  alt="">
+                  <hr>
+                  <p>对网页稍作修改</p>
+                  <img src="https://img-blog.csdnimg.cn/7b994855839c4e51a1fe0a8ff51cb515.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_20,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+                  alt="">
+                  <hr>
+                  <h2>WLAN初步配置</h2>
+                  <p>WLAN 即 WiFi 当前也是广泛的应用在各种场景。</p>
+                  <p>我们通过构建如下拓扑的一个家庭 WLAN 来练习一下其相关的配置：</p>
+                  <img src="https://img-blog.csdnimg.cn/6f091a631133424e98f5b15d3a57a29f.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAVHNpbmd5YW5nXw==,size_18,color_FFFFFF,t_70,g_se,x_16" class="card-img-top"
+                  alt="">
+                  <hr>
+                  <p>笔记本及台式机默认只有有线网卡，请先关机，在关机状态下删除有线网卡，添加无线网卡，然后再开机。</p>
+
+
+                  <a href="#">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!--Card content-->
+            <p class="card-body">
+              <!--Title-->
+     <!--Grid column 2-->
+     <div class="col-md-5 mb-4">
+      <hr>
+      <h2>总结</h2>
+      <a href="summary.html" class="btn btn-indigo" >点击前往！</a>
+    </div>
+    <!--Grid column-->
+            </div>
+          </div>
+           <!--Grid column 2-->
+           <div class="col-md-5 mb-4">
+            <h2></h2>
+              
+          </div>
+          
+
+
+        
+        
+      </div>
+      <!--Grid row-->
+    </div>
+    <!--Main container-->
+  </main>
+
+  <!-- Footer -->
+  <footer class="page-footer indigo pt-4 mt-4">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->I
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
+</body>
+
+</html>

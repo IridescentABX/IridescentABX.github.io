@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>计算机网络实验</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!--Main Navigation-->
+  <header>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-md navbar-dark indigo">
+      <div class="container">
+        <!-- Navbar brand -->
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+          aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+          <!-- Links -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">验证性
+                
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="Guns.html">Wireshark
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="map.html">CPT</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="summary.html">总结</a>
+            </li>
+          </ul>
+          <!-- Links -->
+          <form class="form-inline">
+            <div class="md-form my-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            </div>
+          </form>
+        </div>
+        <!-- Collapsible content -->
+      </div>
+    </nav>
+    <!--/.Navbar-->
+  </header>
+  <!--Main Navigation-->
+
+  <main class="mt-5">
+    <!--Main container-->
+    <div class="container">
+      <!--Grid row 1-->
+      <div class="row">
+        <!--Grid column 1-->
+        <div class="col-md-7 mb-4">
+          <div class="view overlay z-depth-1-half">
+            <img src="http://r.photo.store.qq.com/psc?/V12FmhZY4119Bn/45NBuzDIW489QBoVep5mcVktkRWVDgRnzihBQiXMwnd19.sDu0SNAWnGhqV4FFFnNOIlCqxXxXAuDQzozp9JvKRA8Z25USjLmMJtyTuoj64!/r" class="card-img-top" alt="">
+            <div class="mask rgba-white-light"></div>
+          </div>
+        </div>
+        <!--Grid column-->
+        <!--Grid column 2-->
+        <div class="col-md-5 mb-4">
+          <h2>Wireshark实验</h2>
+          <hr>
+          <p>本部分按照数据链路层、网络层、传输层以及应用层进行分类，共有 10 个实验。需要使用协议分析软件 Wireshark 进行，请根据简介部分自行下载安装。</p>
+          <a href="map.html" class="btn btn-indigo" >开始！</a>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+      <!--Grid row 2-->
+      <div class="row">
+
+        <!--Grid column 2-->
+        <div class="col-md-5 mb-4">
+          <h2>实验一 数据链路层</h2>
+          <hr>
+          <p>熟悉 Ethernet 帧结构</p>
+          <p>使用 Wireshark 任意进行抓包，熟悉 Ethernet 帧的结构，如：目的 MAC、源 MAC、类型、字段等。</p>
+        </div>
+        <!--Grid column-->
+          <!--图片-->
+        <div class="card">
+
+          <div class="view overlay">
+            <img src="http://r.photo.store.qq.com/psc?/V12FmhZY4119Bn/45NBuzDIW489QBoVep5mcQeYb9YFiekcJ0twcKVxlIAsQL9BpyFC5A*n76KMtSW6l6VVxyHxT7m13UGrnjSkdRcZHKZAFVRAE7cXqEBTUbY!/r" class="card-img-top"
+              alt="">
+            <a href="#">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Card content-->
+          <div class="card-body">
+            <!--Title-->
+            <p class="card-text"></p>
+          </div>
+        </div>
+        <!--图片-->
+
+        <!--文本-->
+        <div class="col-md-5 mb-4">
+        <hr>
+        <p>了解子网内/外通信时的 MAC 地址</p>
+        <p>----ping 你旁边的计算机（同一子网），同时用 Wireshark 抓这些包（可使用 icmp 关键字进行过滤以利于分析），记录一下发出帧的目的 MAC 地址以及返回帧的源 MAC 地址是多少？这个 MAC 地址是谁的？</p>
+        <p>----然后 ping qige.io （或者本子网外的主机都可以），同时用 Wireshark 抓这些包（可 icmp 过滤），记录一下发出帧的目的 MAC 地址以及返回帧的源 MAC 地址是多少？这个 MAC 地址是谁的？</p>
+        <p>----再次 ping www.cqjtu.edu.cn （或者本子网外的主机都可以），同时用 Wireshark 抓这些包（可 icmp 过滤），记录一下发出帧的目的 MAC 地址以及返回帧的源 MAC 地址又是多少？这个 MAC 地址又是谁的？</p>
+        </div>
+        <!--文本-->
+
+        <!--图片-->
+          <div class="card">
+            <div class="view overlay">
+              <img src="http://r.photo.store.qq.com/psc?/V12FmhZY4119Bn/45NBuzDIW489QBoVep5mcQCOuHg7GwlwyKOH5XLUbM6WQIdNZWkMg5HXTRnUZl7TqHxxBmx6anVIr8*AUqjNYwXYAuVDGUHh.oXhZUIE6ZU!/r" class="card-img-top"
+                alt="">
+              <a href="#">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!--Card content-->
+            <div class="card-body">
+              <!--Title-->
+              <p class="card-text"></p>
+              <hr>
+              <p>目的MAC 5c:87:9c:b3:4c:96，来自我ping的电脑，也就是192.168.1.170</p>
+              <p>源MAC d0:ab:d5:82:71:25，是我自己的电脑，也就是192.168.1.56</p>
+              <hr>
+            </div>
+            <div class="view overlay">
+              <img src="http://r.photo.store.qq.com/psc?/V12FmhZY4119Bn/45NBuzDIW489QBoVep5mcQeYb9YFiekcJ0twcKVxlIACxjRTSRePWnJHrs*7FoxsGD3lMdoj8hGDPsm0JDBpTfNmawEbmU*6ywMTPPDwlfQ!/r" class="card-img-top"
+                alt="">
+              <a href="#">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+             <!--Card content-->
+             <div class="card-body">
+              <!--Title-->
+              <p class="card-text"></p>
+              <hr>
+              <p>目的MAC是网关</p>
+              <p>源MAC d0:ab:d5:82:71:25，是我自己的电脑，也就是192.168.1.56</p>
+              <hr>
+            </div>
+            <div class="view overlay">
+              <img src="http://r.photo.store.qq.com/psc?/V12FmhZY4119Bn/45NBuzDIW489QBoVep5mcRVXsh9F.F9m8pW2.AFTZNAzuX3mfeYp.IKVB0xj.IvYxWxMbAyiKY9pJVEPFWMiiaJbO8BkKV*lzD19HAJaoo0!/r" class="card-img-top"
+                alt="">
+              <a href="#">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+             <!--Card content-->
+             <div class="card-body">
+              <!--Title-->
+              <p class="card-text"></p>
+              <hr>
+              <p>目的MAC fc:0c:45:06:19:00，来自我ping的网址www.cqjtu.edu.cn，也就是218.70.34.236</p>
+              <p>源MAC d0:ab:d5:82:71:25，是我自己的电脑，也就是192.168.1.56</p>
+              <hr>
+            </div>
+          </div> 
+          <!--图片-->
+        
+
+        <!--Grid column 2-->
+        <div class="col-md-5 mb-4">
+          <h2>实验二 网络层</h2>
+          <hr>
+          <p>熟悉 IP 包结构</p>
+          <p>使用 Wireshark 任意进行抓包（可用 ip 过滤），熟悉 IP 包的结构，如：版本、头部长度、总长度、TTL、协议类型等字段。</p>
+        </div>
+        <!--Grid column-->
+
+        <!--图片-->
+        <div class="card">
+          <!--Card image-->
+          <div class="view overlay">
+            <img src="http://r.photo.store.qq.com/psc?/V12FmhZY4119Bn/45NBuzDIW489QBoVep5mcSNaYcuYw4KO.zxy9bQqTPNHT4OJABhJZEVpiigXytGuO9Gb521Tq.oyxswhEPEWx7Im3DW1ZNcmYZ5F1C.CQwE!/r" class="card-img-top"
+              alt="">
+            <a href="#">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Card content-->
+          <div class="card-body">
+            <!--Title-->
+          </div>
+        </div>
+        <!--图片-->
+        
+        <!--Grid column 2-->
+        <div class="col-md-5 mb-4">
+          <hr>
+          <p>IP 包的分段与重组</p>
+          <p>----根据规定，一个 IP 包最大可以有 64K 字节。但由于 Ethernet 帧的限制，当 IP 包的数据超过 1500 字节时就会被发送方的数据链路层分段，然后在接收方的网络层重组。</p>
+          <p>----缺省的，ping 命令只会向对方发送 32 个字节的数据。我们可以使用 ping 202.202.240.16 -l 2000 命令指定要发送的数据长度。此时使用 Wireshark 抓包（用 ip.addr == 202.202.240.16 进行过滤），了解 IP 包如何进行分段，如：分段标志、偏移量以及每个包的大小等</p>
+        </div>
+        <!--Grid column-->
+        <div class="card">
+          <!--Card image-->
+          <div class="view overlay">
+            <img src="http://r.photo.store.qq.com/psc?/V12FmhZY4119Bn/45NBuzDIW489QBoVep5mcXkXo2n8pH8DnKHPI1kJJTvJRkHIPnsUpYEHc9D8vzAogLD7BiD8kTSuloJh39.7LnlMtNHclPT6UscpXOJva40!/r" class="card-img-top"
+              alt="">
+            <a href="#">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Card content-->
+          <div class="card-body">
+            <!--Title-->
+            <p></p>
+          </div>
+        </div>
+        <!--Grid column 2-->
+
+                  <!--Grid column 2-->
+                  <div class="col-md-5 mb-4">
+                    <hr>
+                    <p>考察 TTL 事件</p>
+                    <p>在 IP 包头中有一个 TTL 字段用来限定该包可以在 Internet上传输多少跳（hops），一般该值设置为 64、128等。</p>
+                    <p>在验证性实验部分我们使用了 tracert 命令进行路由追踪。其原理是主动设置 IP 包的 TTL 值，从 1 开始逐渐增加，直至到达最终目的主机。</p>
+                    <p>请使用 tracert www.baidu.com 命令进行追踪，此时使用 Wireshark 抓包（用 icmp 过滤），分析每个发送包的 TTL 是如何进行改变的，从而理解路由追踪原理。</p>
+                    </div>
+                    <!--Grid column-->
+                    <!--图片-->
+                  <div class="card">
+                    <!--Card image-->
+                    <div class="view overlay">
+                      <img src="http://r.photo.store.qq.com/psc?/V12FmhZY4119Bn/45NBuzDIW489QBoVep5mcZPpO0voxB6jAXXQvDNBSlJ6uqsozfsQ0M16T7vZYEUIPQFiEyEky*2Y9XPtsYY79Yzb7T0*1*qCQaQ.SPYwFJk!/r" class="card-img-top"
+                        alt="">
+                      <a href="#">
+                        <div class="mask rgba-white-slight"></div>
+                      </a>
+                    </div>
+                    <!--Card content-->
+                    <div class="card-body">
+                      <!--Title-->
+                    </div>
+                  </div>
+                  <!--图片-->
+        <div class="col-md-5 mb-4">
+          <h2>实验三 传输层</h2>
+          <hr>
+          <p>熟悉 TCP 和 UDP 段结构</p>
+          <p>用 Wireshark 任意抓包（可用 tcp 过滤），熟悉 TCP 段的结构，如：源端口、目的端口、序列号、确认号、各种标志位等字段。</p>
+          <p>用 Wireshark 任意抓包（可用 udp 过滤），熟悉 UDP 段的结构，如：源端口、目的端口、长度等。</p>
+        </div>
+        <!--Grid column-->
+        <div class="card">
+          <!--Card image-->
+          <div class="view overlay">
+            <img src="http://r.photo.store.qq.com/psc?/V12FmhZY4119Bn/45NBuzDIW489QBoVep5mcRVXsh9F.F9m8pW2.AFTZNBxS.Qbjxc67CMVzfpxe73LKOFiTWfa6vt6W8Lv8RmMMeK7Eilbs5eDlN9jBhp03bI!/r" class="card-img-top"
+              alt="">
+              <div class="card-body">
+                <!--Title-->
+                <p class="card-text"></p>
+                <hr>
+                <p>第一次握手SYN为1；第二次握手SYN和ACK都为1；第三次握手SYN为0，ACK置为1.</p>
+                <hr>
+              </div>
+              <img src="http://r.photo.store.qq.com/psc?/V12FmhZY4119Bn/45NBuzDIW489QBoVep5mcRVXsh9F.F9m8pW2.AFTZNBshvJujTitqhYT56cJxwBK7Zu0NvI6*NmFVuPRqCr7W1m5tjOYgNmQ4llzfrcDovo!/r" class="card-img-top"
+              alt="">
+              <div class="card-body">
+                <!--Title-->
+                <p class="card-text"></p>
+                <hr>
+                <p>”第一次挥手”客户端发送的FIN请求释放连接报文以[FIN，ACK]作为标志位，其中报文序号Seq=1047；确认号Ack=37314。</p>
+                <p>”第二次挥手”服务器端继续返回的FIN同意释放连接报文以[FIN，ACK]作为标志位；其中报文序号Seq=37314；确认号Ack=1048。</p>
+                <p>”第三次挥手”客户端发出的ACK确认接收报文以[ACK]作为标志位；其中报文序号Seq=1048；确认号Ack=37315。</p>
+                <hr>
+              </div>
+              <img src="http://r.photo.store.qq.com/psc?/V12FmhZY4119Bn/45NBuzDIW489QBoVep5mcRVXsh9F.F9m8pW2.AFTZNA7mOLviAuHPdR5oBUV7eExv.bRK5PdK*mTQSWFpiciNKoHySn66ZZOGCh5UEDjbzU!/r" class="card-img-top"
+              alt="">
+            <a href="#">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Card content-->
+          <div class="card-body">
+            <!--Title-->
+            <p class="card-text"></p>
+              <hr>
+              <p>去掉 Follow TCP Stream，即不跟踪一个 TCP 流，你可能会看到访问 qige.io 时我们建立的连接有多个。请思考为什么会有多个连接？作用是什么？</p>
+              <p>----因为当其数据传输完成后就会断开连接，一旦需要重新进行发送数据，就要再次进行连接。</p>
+              <p>----是为了实现多个用户进行访问，对业务频率不高的场合，节省通道的使用，不让其长期占用通道。</p>
+              <hr>
+              <p>我们上面提到了释放连接需要四次挥手，有时你可能会抓到只有三次挥手。原因是什么？</p>
+
+              <p>可能第二次和第三次合并了。</p>
+              <p>FIN报文用在本端没有数据发送给对方时，关闭从本端到对端的连接。但是并不影响从对方到本端的连接，也就是说本端仍然可以接收对方的数据。即发送通道关闭，接收通道正常。</p>
+              <p>如果对方收到本端FIN报文时，对方的接收通道就会关闭。此时，如果对方也没有数据发给本端，那么对方也会发送FIN给本端，用于关闭从对方到本端的连接，这时候就可能出现ACK和FIN合在一起的情况。</p>
+              <hr>
+
+          </div>
+        </div>
+
+
+
+         <!--Grid column 2-->
+        <div class="col-md-5 mb-4">
+          <h2>实验四 应用层</h2>
+          <hr>
+          <p>了解 DNS 解析</p>
+            <p>先使用 ipconfig /flushdns 命令清除缓存，再使用 nslookup qige.io 命令进行解析，同时用 Wireshark 任意抓包（可用 dns 过滤）。</p>
+            <p>你应该可以看到当前计算机使用 UDP，向默认的 DNS 服务器的 53 号端口发出了查询请求，而 DNS 服务器的 53 号端口返回了结果。</p>
+            <p>可了解一下 DNS 查询和应答的相关字段的含义</p>
+        </div>
+        <!--Grid column-->
+
+        <!--图片-->
+        <div class="card">
+          <!--Card image-->
+          <div class="view overlay">
+            <img src="http://r.photo.store.qq.com/psc?/V12FmhZY4119Bn/45NBuzDIW489QBoVep5mccmDWYzTkPlrkvVuuWAofYgAoOw8XEqd5D*E7oO0rFZ*uKCW8il5hMhDQ.of0ORTB*1GKFGbhEpAwJwOAyDQ7C4!/r" class="card-img-top"
+              alt="">
+              <img src="http://r.photo.store.qq.com/psc?/V12FmhZY4119Bn/45NBuzDIW489QBoVep5mcTYT8kUGBNB2rJYaX628evUQ4IC81WyLc.iaJvS0Qej6aPHrGB0amARl1d1XZyf.hdVLQJ.uvGIE838ZU1i299Y!/r" class="card-img-top"
+              alt="">
+            <a href="#">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Card content-->
+          <div class="card-body">
+            <!--Title-->
+            <hr>
+            <p>可了解一下 DNS 查询和应答的相关字段的含义。</p>
+            <p>----DNS是一套分布式的域名服务系统。每个DNS服务器上都存放着大量的机器名和 IP地址的映射，并且是动态更新的。众多网络客户端程序都使用DNS协议来向DNS服务器查询目标主机的IP地址。</p>
+            <hr>
+            <p>你可能会发现对同一个站点，我们发出的 DNS 解析请求不止一个，思考一下是什么原因？</p>
+            <p>----为了使服务器的负载得到平衡，虽然每一台计算机的IP不一样，但因为其使用的服务软件是一样的，所以其DNS是一样的。当我们去访问服务器的时候，就会得到一台计算机的IP地址，接下来后面访问者也是得到其他计算机的IP地址，这样可以减少服务器的负荷。</p>
+            <hr>
+          </div>
+        </div>
+        <!--图片-->
+
+
+        <!--Grid column 2-->
+        <div class="col-md-5 mb-4">
+          <hr>
+          <p>了解 HTTP 的请求和应答</p>
+          <p>打开浏览器访问 qige.io 网站，用 Wireshark 抓包（可用http 过滤再加上 Follow TCP Stream），不要立即停止 Wireshark 捕获，待页面显示完毕后再多等一段时间以将释放连接的包捕获。</p>
+          <p>请在你捕获的包中找到 HTTP 请求包，查看请求使用的什么命令，如：GET, POST。并仔细了解请求的头部有哪些字段及其意义。</p>
+          <p>请在你捕获的包中找到 HTTP 应答包，查看应答的代码是什么，如：200, 304, 404 等。并仔细了解应答的头部有哪些字段及其意义。</p>
+        </div>
+        <!--Grid column-->
+        <!--图片-->
+        <div class="card">
+          <!--Card image-->
+          <div class="view overlay">
+            <img src="http://r.photo.store.qq.com/psc?/V12FmhZY4119Bn/45NBuzDIW489QBoVep5mcb5Z6JBWmo4zF29WHO5wwgbxkI0o4W7B3Uu5EXWwnoIr6XR7WyKVpXEWrtpwQ6syn36SKJacp5fckndhRkAFifE!/r" class="card-img-top"
+              alt="">
+            <a href="#">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Card content-->
+          <div class="card-body">
+            <!--Title-->
+            <hr>
+            <p>Accept:告诉WEB服务器自己接受什么介质类型</p>
+            <p>Content-Type:WEB 服务器告诉浏览器自己响应的对象的类型</p>
+            <p>Content-Length:WEB 服务器告诉浏览器自己响应的对象的长度</p>
+            <p>Cache-Control:用来指示缓存系统（服务器上的，或者浏览器上的）应该怎样处理缓存</p>
+            <p>Host:客户端指定自己想访问的WEB服务器的域名/IP 地址和端口号</p>
+            <p>POST:请求的方式，其中包括URI和版本</p>
+            <hr>
+            <p>Server：服务器通过这个头告诉浏览器服务器的类型。</p>
+            <p>Transfer-Encoding：告诉浏览器数据的传送格式。</p>
+            <p>Content- Type：表示后面的文档属于什么MIME类型。</p>
+            <p>Cache-Control：指定请求和响应遵循的缓存机制。</p>
+            <hr>
+            <p>刷新一次 qige.io 网站的页面同时进行抓包，你会发现不少的 304 代码的应答，这是所请求的对象没有更改的意思，让浏览器使用本地缓存的内容即可。那么服务器为什么会回答 304 应答而不是常见的 200 应答？</p>
+            <p>----当你第一次访问网站的时候，访问正常200，之歌时候就有资源缓存在浏览器中，当你第二次访问的的对象与上次一样的时候，直接采用缓存，就是304.。</p>
+            <hr>
+          </div>
+        </div>
+        <!--图片-->
+                <!--Grid column 2-->
+                <div class="col-md-5 mb-4">
+                  <hr>
+                  <h2>Cisco Packet Tracer 实验</h2>
+                  <hr>
+                  <a href="map.html" class="btn btn-indigo" >点击前往！</a>
+                </div>
+                <!--Grid column-->
+        
+      </div>
+      <!--Grid row-->
+    </div>
+    <!--Main container-->
+  </main>
+
+  <!-- Footer -->
+  <footer class="page-footer indigo pt-4 mt-4">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->I
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
+</body>
+
+</html>
